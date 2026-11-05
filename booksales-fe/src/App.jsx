@@ -11,6 +11,8 @@ import AuthorCreate from "./pages/admin/authors/create";
 import AdminBooks from "./pages/admin/books/index";
 import BookCreate from "./pages/admin/books/create";
 import BookEdit from "./pages/admin/books/edit";
+import GenreEdit from "./pages/admin/genres/edit";
+import AuthorEdit from "./pages/admin/authors/edit";
 
 export default function App() {
   return (
@@ -28,6 +30,8 @@ export default function App() {
       <Route path="books" element={<AdminBooks />} />
       <Route path="books/create" element={<BookCreate />} />
       <Route path="books/:id/edit" element={<BookEdit />} />
+      <Route path="genres/:id/edit" element={<GenreEdit />} />
+      <Route path="authors/:id/edit" element={<AuthorEdit />} />
       </Route>
     </Routes>
   );
