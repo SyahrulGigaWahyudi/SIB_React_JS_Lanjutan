@@ -13,6 +13,7 @@ import BookCreate from "./pages/admin/books/create";
 import BookEdit from "./pages/admin/books/edit";
 import GenreEdit from "./pages/admin/genres/edit";
 import AuthorEdit from "./pages/admin/authors/edit";
+import Register from "./pages/auth/register";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
       </Route>
       <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
       <Route path="/admin" element={<AdminLayout />}>
       <Route index element={<Dashboard />} />
       <Route path="genres" element={<AdminGenres />} />

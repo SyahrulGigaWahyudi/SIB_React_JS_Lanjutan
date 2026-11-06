@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import API from "../../_api";
 
 export default function Login() {
@@ -76,6 +76,13 @@ export default function Login() {
           >
             {loading ? "Memproses..." : "Sign in"}
           </button>
+
+          <p className="text-sm text-gray-500 text-center">
+            Belum punya akun?{" "}
+            <Link to="/register" className="font-medium text-indigo-600 hover:underline">
+              Daftar
+            </Link>
+          </p>
         </form>
       </div>
     </section>
